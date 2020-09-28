@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9wA-fL-nmH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Light View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LightViewController" customModule="StatusBarStyle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtk-W4-557">
+                                <rect key="frame" x="20" y="722" width="384" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="j1B-F2-x8m"/>
+                                </constraints>
+                                <state key="normal" title="Show Dark">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="whQ-nC-tGA" kind="presentation" id="eLq-3g-bAF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbp-qh-4Ie">
+                                <rect key="frame" x="15" y="653" width="384" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gnV-nQ-hRP"/>
+                                </constraints>
+                                <state key="normal" title="Show Nav Dark">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sCk-MI-VH1" kind="presentation" id="wyw-Gv-NnB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBF-Vb-nB9">
+                                <rect key="frame" x="15" y="578" width="384" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="a3z-yO-RTq"/>
+                                </constraints>
+                                <state key="normal" title="Push Dark">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SgJ-xX-zuw" kind="show" id="551-8e-ydx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gtk-W4-557" secondAttribute="trailing" constant="10" id="0LY-hz-F3s"/>
+                            <constraint firstItem="gtk-W4-557" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6qR-dr-3ZR"/>
+                            <constraint firstItem="gtk-W4-557" firstAttribute="top" secondItem="mbp-qh-4Ie" secondAttribute="bottom" constant="29" id="6vX-32-CFl"/>
+                            <constraint firstItem="pBF-Vb-nB9" firstAttribute="width" secondItem="mbp-qh-4Ie" secondAttribute="width" id="6xy-lb-ZXO"/>
+                            <constraint firstItem="mbp-qh-4Ie" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="E1h-Ac-Znr"/>
+                            <constraint firstItem="pBF-Vb-nB9" firstAttribute="height" secondItem="mbp-qh-4Ie" secondAttribute="height" id="JyJ-ww-b9N"/>
+                            <constraint firstItem="mbp-qh-4Ie" firstAttribute="width" secondItem="gtk-W4-557" secondAttribute="width" id="LAb-Px-1kf"/>
+                            <constraint firstItem="mbp-qh-4Ie" firstAttribute="top" secondItem="pBF-Vb-nB9" secondAttribute="bottom" constant="35" id="MFK-AH-AHR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gtk-W4-557" secondAttribute="bottom" constant="100" id="dR1-gr-kEB"/>
+                            <constraint firstItem="mbp-qh-4Ie" firstAttribute="height" secondItem="gtk-W4-557" secondAttribute="height" id="uTG-wy-o8R"/>
+                            <constraint firstItem="pBF-Vb-nB9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ydt-WF-k8a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Td6-lm-oEi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776.8115942028987" y="-218.30357142857142"/>
+        </scene>
+        <!--Modal Dark View Controller-->
+        <scene sceneID="gUK-Dg-Nfx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="whQ-nC-tGA" customClass="ModalDarkViewController" customModule="StatusBarStyle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PKK-02-GIj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3k-WJ-IP9">
+                                <rect key="frame" x="20" y="625" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Update Status Bar">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateStatusBarButtonTap:" destination="whQ-nC-tGA" eventType="touchUpInside" id="k9g-L1-IZx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOu-ka-XIw">
+                                <rect key="frame" x="20" y="722" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iLq-GE-FK0"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissButtonTap:" destination="whQ-nC-tGA" eventType="touchUpInside" id="NpI-1g-rvi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gOu-ka-XIw" firstAttribute="top" secondItem="E3k-WJ-IP9" secondAttribute="bottom" constant="57" id="5NJ-3o-Dkk"/>
+                            <constraint firstItem="E3k-WJ-IP9" firstAttribute="width" secondItem="gOu-ka-XIw" secondAttribute="width" id="9Wn-DO-Mzf"/>
+                            <constraint firstItem="Hub-b3-Lh4" firstAttribute="bottom" secondItem="gOu-ka-XIw" secondAttribute="bottom" constant="100" id="BWe-x2-Rw4"/>
+                            <constraint firstItem="E3k-WJ-IP9" firstAttribute="height" secondItem="gOu-ka-XIw" secondAttribute="height" id="FSw-No-cGc"/>
+                            <constraint firstItem="Hub-b3-Lh4" firstAttribute="trailing" secondItem="gOu-ka-XIw" secondAttribute="trailing" constant="20" id="d6u-Gr-pCB"/>
+                            <constraint firstItem="gOu-ka-XIw" firstAttribute="leading" secondItem="Hub-b3-Lh4" secondAttribute="leading" constant="20" id="fow-6i-drM"/>
+                            <constraint firstItem="E3k-WJ-IP9" firstAttribute="centerX" secondItem="Hub-b3-Lh4" secondAttribute="centerX" id="vlT-uY-JPG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hub-b3-Lh4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bb8-Ra-aGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1630" y="-865"/>
+        </scene>
+        <!--Modal Navigation View Controller-->
+        <scene sceneID="kCk-Lc-v9o">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Fxd-ly-lmo" customClass="ModalNavigationViewController" customModule="StatusBarStyle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XQ4-SR-F7A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4F-pz-zPT">
+                                <rect key="frame" x="20" y="625" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Update Status Bar">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateStatusBarButtonTap:" destination="Fxd-ly-lmo" eventType="touchUpInside" id="QxW-qU-Oo8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N53-Gi-clb">
+                                <rect key="frame" x="20" y="722" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fWr-5k-oGP"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissButtonTap:" destination="Fxd-ly-lmo" eventType="touchUpInside" id="wqh-Wx-KFa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f4F-pz-zPT" firstAttribute="centerX" secondItem="Apt-7j-R4w" secondAttribute="centerX" id="LHt-3f-tmp"/>
+                            <constraint firstItem="f4F-pz-zPT" firstAttribute="width" secondItem="N53-Gi-clb" secondAttribute="width" id="LTG-m7-fGc"/>
+                            <constraint firstItem="f4F-pz-zPT" firstAttribute="height" secondItem="N53-Gi-clb" secondAttribute="height" id="Lwi-gW-fCN"/>
+                            <constraint firstItem="Apt-7j-R4w" firstAttribute="trailing" secondItem="N53-Gi-clb" secondAttribute="trailing" constant="20" id="SMd-Sd-yL1"/>
+                            <constraint firstItem="N53-Gi-clb" firstAttribute="top" secondItem="f4F-pz-zPT" secondAttribute="bottom" constant="57" id="WKn-pK-mLm"/>
+                            <constraint firstItem="N53-Gi-clb" firstAttribute="leading" secondItem="Apt-7j-R4w" secondAttribute="leading" constant="20" id="d2l-kT-nr8"/>
+                            <constraint firstItem="Apt-7j-R4w" firstAttribute="bottom" secondItem="N53-Gi-clb" secondAttribute="bottom" constant="100" id="s2D-Yg-Mu6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Apt-7j-R4w"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4wH-0X-iS1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ea-ao-Mt5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3466.666666666667" y="-218.30357142857142"/>
+        </scene>
+        <!--Custom Navigation Controller-->
+        <scene sceneID="e88-eC-wiM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" interfaceStyle="light" id="sCk-MI-VH1" customClass="CustomNavigationController" customModule="StatusBarStyle" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n4h-G8-hgi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fxd-ly-lmo" kind="relationship" relationship="rootViewController" id="pfv-J6-vQD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hc-WJ-38i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2563.768115942029" y="-218.30357142857142"/>
+        </scene>
+        <!--Push Dark View Controller-->
+        <scene sceneID="Iq0-lc-09i">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="SgJ-xX-zuw" customClass="PushDarkViewController" customModule="StatusBarStyle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IDc-cx-0oW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25n-rz-bYg">
+                                <rect key="frame" x="20" y="625" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Update Status Bar">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateStatusBarButtonTap:" destination="SgJ-xX-zuw" eventType="touchUpInside" id="Vl1-vi-thd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwn-aa-JKd">
+                                <rect key="frame" x="20" y="722" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="S49-f1-dAr"/>
+                                </constraints>
+                                <state key="normal" title="Pop">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="popButtonTap:" destination="SgJ-xX-zuw" eventType="touchUpInside" id="fF8-Hf-QFa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bwn-aa-JKd" firstAttribute="leading" secondItem="Gu4-ae-CL7" secondAttribute="leading" constant="20" id="5rq-YQ-TR6"/>
+                            <constraint firstItem="25n-rz-bYg" firstAttribute="width" secondItem="bwn-aa-JKd" secondAttribute="width" id="AEr-P4-gYX"/>
+                            <constraint firstItem="bwn-aa-JKd" firstAttribute="top" secondItem="25n-rz-bYg" secondAttribute="bottom" constant="57" id="GLo-oa-aL1"/>
+                            <constraint firstItem="Gu4-ae-CL7" firstAttribute="trailing" secondItem="bwn-aa-JKd" secondAttribute="trailing" constant="20" id="WNi-NY-mkJ"/>
+                            <constraint firstItem="Gu4-ae-CL7" firstAttribute="bottom" secondItem="bwn-aa-JKd" secondAttribute="bottom" constant="100" id="co1-v8-eV3"/>
+                            <constraint firstItem="25n-rz-bYg" firstAttribute="centerX" secondItem="Gu4-ae-CL7" secondAttribute="centerX" id="g4W-IG-F02"/>
+                            <constraint firstItem="25n-rz-bYg" firstAttribute="height" secondItem="bwn-aa-JKd" secondAttribute="height" id="xoP-js-1us"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gu4-ae-CL7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qji-j7-c0A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Jz-oL-qK9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2562" y="477"/>
+        </scene>
+        <!--Custom Navigation Controller-->
+        <scene sceneID="TGb-ed-qCJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9wA-fL-nmH" customClass="CustomNavigationController" customModule="StatusBarStyle" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kgq-Ci-1sY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EO4-Zw-FwC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2o-X9-wqy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866.66666666666674" y="-218.30357142857142"/>
+        </scene>
+    </scenes>
+</document>
